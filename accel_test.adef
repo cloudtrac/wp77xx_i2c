@@ -1,0 +1,26 @@
+start:manual
+version: 0.0.1
+sandboxed: false
+
+executables:{
+	accel = (accel_test)
+}
+
+processes:{
+	run:{
+		(accel)
+	}
+}
+
+requires:{
+	file:{
+		/dev/i2c-4 /dev/i2c-4
+	}
+	dir:{
+		/home/root /home/root
+	}
+}
+
+bindings:{
+
+}
